@@ -1,14 +1,3 @@
-<?php
-include 'config.php';
-session_start();
-
-// Verifica si el usuario está autenticado
-if (!isset($_SESSION['username'])) {
-    header('Location: login.php');
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>

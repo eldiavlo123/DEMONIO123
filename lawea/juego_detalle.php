@@ -42,7 +42,7 @@ $juego = $result->fetch_assoc();
     <p><strong>Fecha de Lanzamiento:</strong> <?php echo htmlspecialchars($juego['fecha_lanzamiento']); ?></p>
     <p><strong>Género:</strong> <?php echo htmlspecialchars($juego['genero']); ?></p>
 
-    <form action="juego_procesar.php" method="post">
+    <form action="juegos_procesar.php" method="post">
         <input type="hidden" name="juego_id" value="<?php echo htmlspecialchars($juego['id']); ?>">
         <input type="hidden" name="usuario_id" value="<?php echo htmlspecialchars($_SESSION['user_id']); ?>">
         <input type="submit" value="Comprar">
